@@ -1,0 +1,76 @@
+<form action="/admin/novedades/modificar" method="post">
+
+    <input type="hidden" value="{{novedades.id}}" name="id">
+
+    <input name="name"  type="text" class="feedback-input" placeholder="name" />{{novedades.name}}
+
+    <input name="class"  type="text" class="feedback-input" placeholder="class" />{{novedades.class}}
+
+    <input type="submit" value="SUBMIT" />
+
+</form>
+
+{{#if error}}
+<h5>{{message}}</h5>
+{{/if}}
+
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+    body {
+        background: #24262b;
+    }
+
+    form {
+        max-width: 420px;
+        margin: 250px auto;
+    }
+
+    .feedback-input {
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #024196;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+    .feedback-input:focus {
+        border: 2px solid #549cfc;
+    }
+
+    textarea {
+        height: 50px;
+        line-height: 50%;
+        resize: vertical;
+    }
+
+    [type="submit"] {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100%;
+        background: #024196;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+    }
+
+    [type="submit"]:hover {
+        background: #549cfc;
+    }
+</style>

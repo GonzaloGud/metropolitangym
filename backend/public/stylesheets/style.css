@@ -1,0 +1,131 @@
+/*  Header  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 900px;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #023982, #023b87, #023d8c, #023f91, #024196);
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 80% 80% / 10%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  bottom: 100px;
+  margin-left: 30px;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+
+/*  Nav */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: content-box;
+}
+
+body {
+  background: #24262b;
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+}
+
+.navMenu {
+  position: fixed;
+  top: 7%;
+  left: 90%;
+
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 50;
+  display: inline-flex;
+  width: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #5494fc;
+}
+
+
+/*  List  */
+.addClient {
+  position: fixed;
+  top: 21%;
+  left: 90%;
+  width: 100px;
+  height: 20px;
+  background: #04AA6D;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 10%;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+
+}
+
+#customers td{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #024196;
+}
+
+#customers th {
+  border: 1px solid #024196;
+  padding: 8px;
+  padding-top: 100px;
+}
+
+#customers th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  background-color: #024196;
+  color: #f6f4e6;
+  
+}
+
+#customers tr{
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+  
